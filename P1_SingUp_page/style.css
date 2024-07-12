@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: monospace
+}
+.outer-box{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to top left, rgb(236, 125, 61),rgb(114, 202, 243));
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+.inner-box{
+    width: 400px;
+    /* display: flex; */
+    margin: 0 auto;
+    position: relative;
+    top: 20%;
+    padding: 20px 40px;
+    background: linear-gradient(to top left, rgb(236, 125, 61),#72caf3);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 10px 10px 5px #c4844c;
+    z-index: 2;
+}
+.singup-header h1{
+    font-size: 2.5rem;
+    color: #212121;
+}
+.singup-header p{
+    font-size: 14px;
+    color: #514e4b;
+    padding-top: 4px;
+    font-weight: bold;
+    /* margin-top: 4px; */
+}
+.singup-body{
+    margin: 20px 0;
+}
+.singup-body p{
+    margin: 10px 0;
+}
+.singup-body p label{
+    display: block;
+    font-weight: bold;
+    font-family: cursive;
+}
+.singup-body p input{
+    width: 100%;
+    padding: 10px;
+    border: 2px solid rgb(131, 84, 34);
+    border-radius: 4px;
+    font-size: 15px;
+    margin-top: 4px;
+}
+.singup-body p input[type = "submit"]{
+    background-color: #ecaa37;
+    color: #fafcfa;
+    border: none;
+    
+}
+.singup-body p input[type = "submit"]:hover{
+    cursor: pointer;
+    background-color:#e4a12c;
+}
+.singup-footer p{
+    text-align: center;
+    font-family: cursive;
+    /* font-size: 14px; */
+}
+.circle{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background: linear-gradient(to right, #eb9861,#83bdd8 );
+    position: absolute;
+}
+.c1{
+    top: 100px;
+    left: 50px;
+    transition-property: all;
+    transition-duration: 2s;
+}
+.c2{
+    bottom: 200px;
+    right: 50px;
+    transition-property: all;
+    transition-duration: 2s;
+}
+.header1{
+    text-align: center;
+    position: relative;
+    top: 15%;
+}
+.c1:hover{
+    rotate: y 180deg;
+    /* transform: rotate3d(1,2,3, 225deg) */
+}
+.c2:hover{
+    rotate: y 180deg;
+}
